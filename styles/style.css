@@ -1,0 +1,37 @@
+.container {
+    display: grid;
+    height: 500px;
+    width: 500px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    background: rgba(114, 186, 94, 0.05);
+    justify-items: center;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    /* width: 50%;
+    height: 50%; */
+}
+
+#error {
+    color: red;
+}
+
+#winner {
+    color: rgb(22, 255, 22);
+}
+
+#a0, #a1, #a2, #a3, #a4, #a5 {
+    border-bottom: 1px solid black;
+}
+
+#a0,#a1,#a3,#a4,#a6,#a7 {
+    border-right: 1px solid black;
+}
