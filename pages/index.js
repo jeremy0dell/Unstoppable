@@ -2,12 +2,12 @@ import { useState, useEffect } from 'react'
 import '../styles/style.css'
 
 const Game = () => {
-  const [game, setGame] = useState(new Array(9).fill(''))
+  const [game, setGame] = useState(new Array(19).fill(''))
   const [turn, setTurn] = useState(0)
   const [error, setError] = useState(false)
   const [outcome, setOutcome] = useState(false)
 
-  useEffect(() => setOutcome(checkGame(game)))
+  useEffect(() => setOutcome(checkGame(game)), [game])
 
   const checkGame = (game) => {
     const winningStates = [

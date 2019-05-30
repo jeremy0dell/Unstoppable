@@ -1,0 +1,30 @@
+html body #__next {
+    height: 100vh;
+}
+
+#container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 80%;
+    background-color: aquamarine;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.row {
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.row:last-child {
+    margin-bottom: 0px
+}
+
+.label {
+    margin-bottom: 10px;
+}
